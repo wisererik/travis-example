@@ -3,8 +3,8 @@ sudo: required
 python:
   - "2.7"
   - "3.5"
-before_install: |
-    mkdir -p /var/log/opensds
+before_install: 
+  - sudo mkdir -p /var/log/opensds
 
 install:
   - pip install tox codecov
